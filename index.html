@@ -3,166 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="Laundry wallah , service , Price , Booking">
-    <meta name="description" content=" Laundry Mart a premier laundry service, is enhancing its online presence ">
-    <meta name="author" content="Rafi">
-    <title>Laundry Wallah</title>
-    <!-- <link rek="stylesheet" href="styles.css"> -->
+    <meta  name="description" content="">
+    <title>Laundry Mart</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="">
-    <style>
-        img {
-            width: 300px;
-        }
-
-        table {
-        width: 20%;
-        border-collapse: collapse;
-        font-family: Arial, sans-serif;
-        }
-
-        th, td {
-        border: 1px solid #444;
-        padding: 5px;
-        text-align: left;
-        }
-
-        #contact ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        footer{
-            text-align: center;
-        }
-
-    </style>
 </head>
-
 <body>
     <header>
-        <h1>Laundry Wallah</h1>
+        <span id="logo">LOGO</span>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <span id="username">Username</span>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#prices">Service Prices</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section id="about">
-            <h2>Laundry Wallah / Laundry Mart</h2>
-            <figure id="laundryPic">
-                <img src="./images/laundryService.png" alt="Laundry Wallah Services Now in online.">
-                <figcaption><em>Laundry Wallah Services Now in online.</em></figcaption>
+    <section class="heroSection">
+
+        <div class="leftDiv">
+            <h2>Revitalize Your Clothes with Expert</h2>
+            <h2 id="colorheading">Laundry Services!</h2>
+            <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your cloths today!</p>
+
+            <button>Book a Service Today!</button>
+        </div>
+
+
+        <div class="rightDiv">
+            <figure>
+                <img src="images/laundryService.png" alt="Laundry Wallah Online services.">
+                <!-- <figcaption><em>Landry Wallah in Online Service!</em></figcaption> -->
             </figure>
-                <p>🧺 Customers can book laundry pickups and deliveries online with just a few taps.</p>
-                <p>💳 Secure digital payments make transactions smooth and cash-free.</p>
-                <p>🚪 Doorstep service ensures convenience, saving time for busy households.</p>
-                <p>📱 Real-time tracking and updates keep customers informed throughout the process.</p>
-                <p>🌟 Offers like first-order discounts and subscription plans build loyalty and repeat business.</p>
-        </section>
 
-        <section id="services">
-            <h2>OUR SERVICES</h2>
-            <h4>🧺 Online Laundry Services Listing</h4>
-            <ul>
-                <li>Regular Wash & Fold</li>
-                <li>Premium Wash & Iron</li>
-                <li>Dry Cleaning</li>
-                <li>Shoe Cleaning & Polishing</li>
-                <li>Bag & Backpack Cleaning</li>
-                <li>Curtain & Upholstery Cleaning</li>
-                <li>Stain Removal Treatments</li>
-                <li>Pickup & Delivery Service</li>
-                <li>Express Service</li>
-            </ul>
-        </section>
+        </div>
 
-        <section id="prices">
-            <h2>Price Based Services</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Regular Wash & Fold</td>
-                        <td>₹25</td>
-                    </tr>
-                    <tr>
-                        <td>Premium Wash & Iron</td>
-                        <td>₹30</td>
-                    </tr>
-                    <tr>
-                        <td>Dry Cleaning</td>
-                        <td>₹28</td>
-                    </tr>
-                    <tr>
-                        <td>Express Service</td>
-                        <td>₹35</td>
-                    </tr>
-                    <tr>
-                        <td>Shoe Cleaning & Polishing</td>
-                        <td>₹15</td>
-
-                    <tr>
-                        <td>Bag & Backpack Cleaning</td>
-                        <td>₹15</td>
-                    </tr>
-                    <tr>
-                        <td>Curtain & Upholstery Cleaning</td>
-                        <td>₹20</td>
-                    </tr>
-                    <tr>
-                        <td>Stain Removal Treatments</td>
-                        <td>₹28</td>
-                    </tr>
-                    <tr>
-                        <td>Pickup & Delivery Service</td>
-                        <td>₹10</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="booking">
-            <h2>Book Now</h2>
-            <form action="">
-                <fieldset>
-                    <legend>Fill your Details for Booking</legend>
-                    <label for="name">User Name :</label>
-                    <input type="text" id="name" name="username" placeholder="Enter Your Name" required>
-                    
-                    <label for="tel">Phone Number :</label>
-                    <input type="tel" id="tel" name="User Phone Number" placeholder="+91 123-456-7890" required>
-                    
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="User Email id" placeholder="example@mail.com" required>
-                    
-                    <input type="submit">
-                </fieldset>
-            </form>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <ul>
-                <li>Mail Us at : <a href="mailto:info@laundrymart.com">info@laundrymart.com</a></li>
-                <li>Call US at : <a href="tel:+919876543210">+91 98765 43210</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer id="#">
-        <p>&copy; Laundry Wallah / Laundry Mart Services. All Rights Reserved</p>
-    </footer>  
+    </section>
 </body>
 </html>
